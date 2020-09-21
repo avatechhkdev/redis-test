@@ -1,0 +1,21 @@
+<!Doctype html>
+
+<html>
+
+<head>
+    <title>Hello World</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script>
+        const socket = io('http://localhost:8111');
+
+        socket.on('connect', () => {
+            console.log(`Socket connected id: ${socket.id}`);
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Basic Socket connection</h1>
+</body>
+
+</html>
